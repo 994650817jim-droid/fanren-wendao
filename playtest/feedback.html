@@ -1,0 +1,154 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>凡人问道 · 试玩反馈</title>
+<style>
+  :root { --ink:#070b0c; --gold:#d9b45a; --paper:#eae3d2; --muted:#9fb0ae; }
+  body { margin:0; background:radial-gradient(120% 80% at 50% -10%, #123036, var(--ink) 62%); color:var(--paper);
+    font-family:"Noto Serif SC","Songti SC","SimSun",serif; line-height:1.8; }
+  main { max-width:720px; margin:0 auto; padding:44px 20px 72px; }
+  h1 { font-size:26px; letter-spacing:.2em; text-align:center; color:#f2e9d3; }
+  p.lead { color:var(--muted); text-align:center; margin-bottom:28px; }
+  fieldset { border:1px solid rgba(217,180,90,.2); border-radius:12px; padding:16px 18px; margin:0 0 16px; background:rgba(14,26,29,.7); }
+  legend { color:var(--gold); padding:0 8px; font-size:14px; letter-spacing:.08em; }
+  label { display:block; margin:6px 0; cursor:pointer; }
+  input[type=radio] { margin-right:8px; accent-color:#d9b45a; }
+  textarea { width:100%; min-height:84px; background:rgba(0,0,0,.3); color:var(--paper);
+    border:1px solid rgba(217,180,90,.28); border-radius:8px; padding:10px; font-family:inherit; font-size:14px; }
+  .row { display:flex; gap:10px; margin-top:18px; flex-wrap:wrap; }
+  button { flex:1; min-height:46px; border-radius:10px; border:1px solid rgba(217,180,90,.5);
+    background:linear-gradient(180deg,#d9b45a,#b78f3c); color:#20160a; font-weight:700; letter-spacing:.1em;
+    font-family:inherit; font-size:15px; cursor:pointer; }
+  button.ghost { background:transparent; color:var(--gold); }
+  pre { display:none; white-space:pre-wrap; background:rgba(0,0,0,.35); padding:14px; border-radius:10px;
+    border:1px solid rgba(217,180,90,.2); font-size:13px; margin-top:16px; }
+  pre.show { display:block; }
+  footer { text-align:center; color:var(--muted); font-size:12px; margin-top:28px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>试玩反馈</h1>
+  <p class="lead">玩过之后回答下面几题就好，不必通关。不需要填写任何个人信息。</p>
+
+  <form id="f">
+    <fieldset>
+      <legend>1. 你知道怎么修炼和突破吗？</legend>
+      <label><input type="radio" name="q1" value="是" />是，很清楚</label>
+      <label><input type="radio" name="q1" value="部分" />部分，试着摸索出来的</label>
+      <label><input type="radio" name="q1" value="否" />不太懂</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. 你知道疗伤丹要在洞府丹房买吗？</legend>
+      <label><input type="radio" name="q2" value="是" />知道</label>
+      <label><input type="radio" name="q2" value="部分" />后来才发现</label>
+      <label><input type="radio" name="q2" value="否" />不知道</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. 打古灵时，你看懂「雷云已聚」「余雷未散」了吗？</legend>
+      <label><input type="radio" name="q3" value="是" />看懂并用了运功防御</label>
+      <label><input type="radio" name="q3" value="部分" />看到了，但没太明白</label>
+      <label><input type="radio" name="q3" value="否" />没注意到</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. 有没有不知道下一步该做什么的时候？</legend>
+      <label><input type="radio" name="q4" value="没有" />没有</label>
+      <label><input type="radio" name="q4" value="有时" />偶尔有</label>
+      <label><input type="radio" name="q4" value="经常" />经常有</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. 战斗、历练或修炼有没有让你觉得重复？</legend>
+      <label><input type="radio" name="q5" value="不重复" />不重复</label>
+      <label><input type="radio" name="q5" value="有点" />有点</label>
+      <label><input type="radio" name="q5" value="很重复" />很重复</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>6. 试玩之后，你愿意再玩一局吗？</legend>
+      <label><input type="radio" name="q6" value="愿意" />愿意</label>
+      <label><input type="radio" name="q6" value="看情况" />看情况</label>
+      <label><input type="radio" name="q6" value="不愿意" />不愿意</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>7. 这次实际玩了多久？</legend>
+      <label><input type="radio" name="q7" value="少于 10 分钟" />少于 10 分钟</label>
+      <label><input type="radio" name="q7" value="10–30 分钟" />10–30 分钟</label>
+      <label><input type="radio" name="q7" value="30–60 分钟" />30–60 分钟</label>
+      <label><input type="radio" name="q7" value="超过 60 分钟" />超过 60 分钟</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>8. 主要在哪个阶段卡住？</legend>
+      <label><input type="radio" name="q8" value="尚未卡住" />尚未卡住</label>
+      <label><input type="radio" name="q8" value="创建角色" />创建角色</label>
+      <label><input type="radio" name="q8" value="修炼或突破" />修炼或突破</label>
+      <label><input type="radio" name="q8" value="历练与奇遇" />历练与奇遇</label>
+      <label><input type="radio" name="q8" value="普通战斗" />普通战斗</label>
+      <label><input type="radio" name="q8" value="最终 Boss" />最终 Boss</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>9. 这次达到的最高进度？</legend>
+      <label><input type="radio" name="q9" value="凡人" />凡人（还没突破）</label>
+      <label><input type="radio" name="q9" value="炼气期" />炼气期</label>
+      <label><input type="radio" name="q9" value="筑基期" />筑基期</label>
+      <label><input type="radio" name="q9" value="金丹期" />金丹期</label>
+      <label><input type="radio" name="q9" value="击败 Boss 通关" />击败 Boss 通关</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>10. 点击修炼、凝灵或历练后，你能清楚知道获得了什么吗？</legend>
+      <label><input type="radio" name="q10" value="很清楚" />很清楚，能看到数值变化</label>
+      <label><input type="radio" name="q10" value="基本清楚" />基本清楚，但有时需要寻找</label>
+      <label><input type="radio" name="q10" value="不太清楚" />不太清楚，不知道操作有没有生效</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>11. 卡住时你具体在做什么？哪里觉得别扭？（可选）</legend>
+      <textarea id="note" placeholder="例如：我一直在点闭关，不知道要先去丹房买药；或者战斗按钮太小/要滚动才能看到"></textarea>
+    </fieldset>
+
+    <div class="row">
+      <button type="button" id="copy">生成并复制结果</button>
+      <button type="button" class="ghost" id="reset">清空重填</button>
+    </div>
+    <pre id="out"></pre>
+  </form>
+
+  <footer>凡人问道 · 试玩反馈 · 本页可离线打开，结果直接复制发给开发者即可</footer>
+</main>
+<script>
+  const labels = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'];
+  document.getElementById('copy').addEventListener('click', async () => {
+    const lines = ['《凡人问道》RC2 试玩反馈'];
+    for (const name of labels) {
+      const picked = document.querySelector('input[name="' + name + '"]:checked');
+      lines.push(name.toUpperCase().slice(1) + '. ' + (picked ? picked.value : '（未填）'));
+    }
+    lines.push('11. ' + (document.getElementById('note').value.trim() || '（未填）'));
+    const text = lines.join('\n');
+    const out = document.getElementById('out');
+    out.textContent = text;
+    out.classList.add('show');
+    try {
+      await navigator.clipboard.writeText(text);
+      out.textContent = text + '\n\n（已复制到剪贴板）';
+    } catch (err) {
+      out.textContent = text + '\n\n（复制失败，请手动全选复制）';
+    }
+  });
+  document.getElementById('reset').addEventListener('click', () => {
+    document.getElementById('f').reset();
+    document.getElementById('out').classList.remove('show');
+  });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.log
+.DS_Store
+.env
+.env.*
+.npmcache/
+playtest/*.zip
+typecheck-report.txt
+scripts/_*.mjs

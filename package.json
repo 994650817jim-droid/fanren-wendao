@@ -1,0 +1,26 @@
+{
+    "name": "fanren-wendao",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "description": "凡人问道 — 免费网页版文字修仙游戏",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test": "node tests/run.mjs",
+        "test:e2e": "playwright test",
+        "test:all": "node tests/run.mjs && playwright test",
+        "simulate": "node scripts/simulate.mjs 1000",
+        "lint": "eslint src tests scripts",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@playwright/test": "^1.65.0",
+        "eslint": "^10.14.0",
+        "globals": "^17.14.0",
+        "typescript": "^7.0.2",
+        "vite": "^5.4.10",
+        "wrangler": "^4.159.0"
+    }
+}
